@@ -15,7 +15,7 @@ async function getIp() {
     return ip
 }
 
-bot.onText(/^\/start/, async function(msg){
+bot.onText(/^\/ip/, async function(msg){
     const ip = await getIp()
     var chatId = msg.chat.id;    
     bot.sendMessage(chatId, `Ip: ${ip}`);
