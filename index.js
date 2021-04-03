@@ -3,7 +3,7 @@ const request = require('request-promise');
 const TelegramBot = require('node-telegram-bot-api');
 
 
-const token = '1496652101:AAHNgdmdai4gdUwBYkX59aZHlKCJUDGjGXs';
+const token = '';
 const bot = new TelegramBot(token, {polling: true});
 
 async function getIp() {
